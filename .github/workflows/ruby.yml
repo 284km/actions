@@ -24,10 +24,11 @@ jobs:
         ruby-version: 2.6.x
     - name: install PostgreSQL client
       run: sudo apt-get install libpq-dev
-    - name: Build and test with Rake
+    - name: install dependencies
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
+        yarn install
     - name: create DB
       run: |
         bin/rails db:setup
