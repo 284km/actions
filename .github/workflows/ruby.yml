@@ -1,6 +1,12 @@
 name: Ruby
 
-on: [push]
+on:
+  workflow_dispatch:
+    branches: [ master ]
+  push:
+    branches: [ master ]
+    #   pull_request:
+    #     branches: [ master ]
 
 jobs:
   build:
