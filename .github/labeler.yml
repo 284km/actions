@@ -1,4 +1,6 @@
 infrastructure:
 - infrastructure/**/*
+railsapp:
+- railsapp/**/*
 webfront:
 - webfront/**/*

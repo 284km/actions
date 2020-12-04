@@ -5,8 +5,18 @@ on:
     branches: [ master ]
   push:
     branches: [ master ]
-    #   pull_request:
-    #     branches: [ master ]
+    paths:
+      - "railsapp/**"
+      - ".github/workflows/ruby.yml"
+  pull_request:
+    branches: [ master ]
+    paths:
+      - "railsapp/**"
+      - ".github/workflows/ruby.yml"
+
+defaults:
+  run:
+    working-directory: railsapp
 
 jobs:
   build:
