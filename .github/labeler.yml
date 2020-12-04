@@ -1,2 +1,4 @@
 infrastructure:
 - infrastructure/**/*
+webfront:
+- webfront/**/*
