@@ -5,27 +5,28 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+railsapp/.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+railsapp/log/*
+railsapp/tmp/*
+!railsapp/log/.keep
+!railsapp/tmp/.keep
 
 # Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
+railsapp/storage/*
+!railsapp/storage/.keep
 
-/public/assets
-.byebug_history
+railsapp/public/assets
+railsapp/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+railsapp/config/master.key
 
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
+railsapp/public/packs
+railsapp/public/packs-test
+railsapp/node_modules
+railsapp/yarn-error.log
+railsapp/yarn-debug.log*
+railsapp/.yarn-integrity
+
