@@ -1,6 +1,8 @@
 name: Merge to Release from Develop
 
 on:
+  workflow_dispatch:
+    branches: [ master ]
   push:
     branches:
       - develop
